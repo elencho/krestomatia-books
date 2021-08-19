@@ -1,5 +1,5 @@
 import {StyleSheet, Dimensions} from 'react-native';
-import {Colors} from '../../enums'
+import {Colors} from '../../enums';
 
 const {width, height} = Dimensions.get('window');
 
@@ -20,21 +20,21 @@ const st = StyleSheet.create({
     fontSize: 18,
     lineHeight: 22,
     fontFamily: 'alk-sanet',
-    marginVertical: 5
+    marginVertical: 5,
   },
   button: {
     marginVertical: 10,
     backgroundColor: Colors.Yellow,
     padding: 5,
-    borderRadius: 10
+    borderRadius: 10,
   },
   bookImg: {
     borderRadius: 5,
     height: height / 2.5,
     width: height / 2,
-    marginBottom: 10
+    marginBottom: 10,
   },
-  bookSum:{
+  bookSum: {
     backgroundColor: Colors.LightGray,
     flexDirection: 'column',
     justifyContent: 'space-between',
@@ -47,9 +47,27 @@ const st = StyleSheet.create({
     backgroundColor: Colors.Yellow,
     paddingVertical: 5,
     borderRadius: 10,
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
   },
-
+  bigTitles: {
+    backgroundColor: Colors.LightGray,
+    margin: 10,
+    padding: 20,
+    alignItems: 'center',
+    borderRadius: 10,
+  },
+  bigTitlesText: {
+    fontFamily: 'alk-sanet',
+    fontSize: 18,
+  },
+  textBox: { 
+    margin: 10,
+  },
+  text: {
+    fontFamily: 'alk-sanet',
+    fontSize: 20,
+    lineHeight: 24
+  },
 });
 
 export default st;
