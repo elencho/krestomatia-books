@@ -9,6 +9,7 @@ import {
 import BookItem from './src/components/BookItem';
 import BookSum from './src/screens/BookSum';
 import Read from './src/screens/Read';
+import TextScreen from './src/screens/TextScreen';
 
 import {Names, Titles, Colors} from './enums';
 
@@ -74,6 +75,11 @@ function App() {
         <Stack.Screen
           name="Read"
           component={Read}
+          options={({route}) => ({title: route.params.title})}
+        />
+                <Stack.Screen
+          name="TextScreen"
+          component={TextScreen}
           options={({route}) => ({title: route.params.title})}
         />
       </Stack.Navigator>
