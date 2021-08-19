@@ -14,3 +14,8 @@ export enum Titles {
     AboTitle = 'აბო თბილელის წამება',
     ShushanikiTitle = 'შუშანიკის წამება'
 }
+export enum BookType {
+    Full = 'full',
+    OnlyMain = 'onlyMain',
+    Main = 'main'
+}
