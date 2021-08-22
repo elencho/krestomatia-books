@@ -12,7 +12,7 @@ import Read from './src/screens/Read';
 import TextScreen from './src/screens/TextScreen';
 
 import {Names, Titles, Colors} from './enums';
-
+//123456-key
 interface HomeScreen {
   navigation: NativeStackNavigationProp<any, any>;
 }
@@ -77,7 +77,7 @@ function App() {
           component={Read}
           options={({route}) => ({title: route.params.title})}
         />
-                <Stack.Screen
+        <Stack.Screen
           name="TextScreen"
           component={TextScreen}
           options={({route}) => ({title: route.params.title})}
